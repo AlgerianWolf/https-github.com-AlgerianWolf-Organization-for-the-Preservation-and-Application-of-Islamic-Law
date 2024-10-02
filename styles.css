@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    align-items: center; /* محاذاة العناصر في الوسط */
+    justify-content: center; /* مركز العناصر */
+}
+
+#chat {
+    width: 90%; /* العرض 90% */
+    max-width: 800px; /* العرض الأقصى 800px */
+    margin: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#sideImageLeft, #sideImageRight {
+    width: 450px; /* عرض الصورة */
+    height: 450px; /* ارتفاع الصورة */
+    margin: 10px; /* مسافة بين الصور و خانة الدردشة */
+    object-fit: cover; /* الحفاظ على نسبة الصورة */
+}
+
+#chatBox {
+    height: 600px; /* زيادة الارتفاع إلى 600px */
+    overflow-y: scroll;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#chatMessages {
+    display: flex;
+    flex-direction: column;
+}
+
+#chatInputArea {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#chatInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+    transition: background-color 0.3s;
+}
+
+#emojiPicker {
+    display: flex;
+    margin-top: 10px;
+}
+
+#emojiPicker span {
+    font-size: 24px; /* حجم الإيموجي */
+    cursor: pointer;
+    margin-right: 5px; /* مسافة بين الإيموجيات */
+}
+
+#emojiPicker span:hover {
+    transform: scale(1.2); /* تكبير الإيموجي عند التحويم */
+    transition: transform 0.2s; /* تأثير الانتقال */
+}
+
+#emojiBtn, #fileBtn {
+    margin-right: 5px;
+}

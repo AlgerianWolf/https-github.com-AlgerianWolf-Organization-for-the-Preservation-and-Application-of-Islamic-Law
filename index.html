@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة التواصل</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>مرحبًا بكم في منصة التواصل</h1>
+    </header>
+    <div id="container">
+        <img src="file:///C:/Users/2023/Pictures/OIG4%20(1).jfif" id="sideImageLeft" alt="صورة جانبية 1">
+        <section id="chat">
+            <h2><i class="fas fa-comments"></i> الدردشة</h2>
+            <div id="chatBox">
+                <div id="chatMessages"></div>
+            </div>
+            <div id="chatInputArea">
+                <button id="emojiBtn" onclick="toggleEmojiPicker()"><i class="fas fa-smile"></i></button>
+                <input type="file" id="fileInput" style="display: none;" accept="image/*" onchange="sendFile()">
+                <button id="fileBtn" onclick="document.getElementById('fileInput').click();"><i class="fas fa-paperclip"></i></button>
+                <input type="text" id="chatInput" placeholder="اكتب رسالتك هنا...">
+                <button id="sendChat"><i class="fas fa-paper-plane"></i></button>
+            </div>
+            <div id="emojiPicker" style="display: none;">
+                <span onclick="insertEmoji('😊')">😊</span>
+                <span onclick="insertEmoji('😂')">😂</span>
+                <span onclick="insertEmoji('😍')">😍</span>
+                <span onclick="insertEmoji('😢')">😢</span>
+                <span onclick="insertEmoji('😡')">😡</span>
+            </div>
+        </section>
+        <img src="file:///C:/Users/2023/Pictures/_8a532354-1f74-4889-a1ef-ce38cbd198a7.jfif" id="sideImageRight" alt="صورة جانبية 2">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
